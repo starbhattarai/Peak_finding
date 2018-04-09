@@ -21,12 +21,11 @@ class Peak:
 def main():
 	array = []
 	print("Please enter the value for array")
-	a = 0
 	a = input()
 	array = [int(item) for item in a.split(",")]
 	x=Peak(array)
 	peakm = x.peakfun(array)
-	print(peakm)
+	print("One of the peak element in the array is", peakm)
 
 if __name__ == "__main__":
 	main()
